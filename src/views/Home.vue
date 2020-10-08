@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="This is Ryan's porfolio site" />
+    <BaseImage
+      source="logo.png"
+      alternate-text="Ryan Camp in blue melenzana smiling at February 2020 Turing Code Fair."
+      size="small"
+      style="rounded"
+    />
+    <img alt="Vue logo" src="../assets/ryan_camp_melenzana_blue.jpeg" />
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import BaseImage from "@/components/BaseImage.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    BaseImage
   }
 };
 </script>
