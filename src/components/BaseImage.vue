@@ -58,9 +58,19 @@ img {
   max-width: 30em;
 }
 .rounded {
-  border-radius: 20%;
+  border-radius: 10%;
 }
 .circle {
   border-radius: 50%;
+}
+@media screen and (max-width: 800px) {
+  img {
+    width: 20em;
+  }
+}
+@media screen and (max-width: 600px) {
+  img {
+    width: 10em;
+  }
 }
 </style>
