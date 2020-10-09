@@ -1,6 +1,5 @@
 <template>
   <div class="base-image">
-    <p>{{style}}</p>
     <img
       :src="source_path"
       :alt="alternateText"
@@ -18,10 +17,24 @@
 export default {
   name: "BaseImage",
   props: {
-    source: String,
-    alternateText: String,
-    size: String,
-    display: String
+    source: {
+      type: String,
+      required: true
+    },
+    alternateText: {
+      type: String,
+      require: true
+    },
+    size: {
+      type: String,
+      required: false,
+      default: "medium"
+    },
+    display: {
+      type: String,
+      required: false,
+      default: "rounded"
+    }
   },
   computed: {
     source_path() {
@@ -36,13 +49,13 @@ img {
   border: 2px solid black;
 }
 .small {
-  width: 10em;
+  max-width: 10em;
 }
 .medium {
-  width: 15em;
+  max-width: 20em;
 }
 .large {
-  width: 20em;
+  max-width: 30em;
 }
 .rounded {
   border-radius: 20%;
