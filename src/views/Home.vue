@@ -1,13 +1,11 @@
 <template>
   <div class="home">
     <BaseImage
-      source="logo.png"
+      source="ryan_camp_melenzana_blue.jpeg"
       alternate-text="Ryan Camp in blue melenzana smiling at February 2020 Turing Code Fair."
-      size="small"
-      style="rounded"
+      size="large"
+      display="circle"
     />
-    <img alt="Vue logo" src="../assets/ryan_camp_melenzana_blue.jpeg" />
-
   </div>
 </template>
 
