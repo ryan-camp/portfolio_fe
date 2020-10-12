@@ -10,7 +10,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: ABeeZee, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -24,8 +24,7 @@
 #nav {
   padding: 1.5rem;
   margin-bottom: 2%;
-  background-color: #f6c90e
-
+  background-color: #f6c90e;
 }
 
 #nav a {
