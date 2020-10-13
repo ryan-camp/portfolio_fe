@@ -22,3 +22,16 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Color Scheme:
+Primary:
+ - #303841  
+
+Secondary:
+ - #3a4750  
+
+Tertiary:
+ - #f6c90e  
+
+Quaternary:
+ - #eeeeee
