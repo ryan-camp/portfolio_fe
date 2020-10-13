@@ -6,6 +6,7 @@
       size="large"
       display="circle"
     />
+    <h1>Ryan Camp</h1>
   </div>
 </template>
 
