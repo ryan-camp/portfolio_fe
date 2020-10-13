@@ -4,11 +4,13 @@
       :src="source_path"
       :alt="alternateText"
       :class="{
+        tiny: size === 'tiny',
         small: size === 'small',
         medium: size === 'medium',
         large: size === 'large',
         rounded: display === 'rounded',
-        circle: display === 'circle'
+        circle: display === 'circle',
+        border: border === true
       }"
     />
   </div>
@@ -32,8 +34,12 @@ export default {
     },
     display: {
       type: String,
+      required: false
+    },
+    border: {
+      type: Boolean,
       required: false,
-      default: "rounded"
+      default: false
     }
   },
   computed: {
@@ -46,31 +52,38 @@ export default {
 <style scoped>
 img {
   height: auto;
+}
+.border {
   border: 0.15em solid #3a4750;
-}
-.small {
-  max-width: 10em;
-}
-.medium {
-  max-width: 20em;
 }
 .large {
   max-width: 30em;
-}
-.rounded {
-  border-radius: 10%;
-}
-.circle {
-  border-radius: 50%;
 }
 @media screen and (max-width: 800px) {
   img {
     width: 20em;
   }
 }
+
+.medium {
+  max-width: 20em;
+}
 @media screen and (max-width: 600px) {
   img {
     width: 10em;
   }
+}
+
+.small {
+  max-width: 10em;
+}
+.tiny {
+  max-width: 2em;
+}
+.rounded {
+  border-radius: 10%;
+}
+.circle {
+  border-radius: 50%;
 }
 </style>
