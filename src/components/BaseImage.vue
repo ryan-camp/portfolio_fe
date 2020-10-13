@@ -54,7 +54,7 @@ img {
   height: auto;
 }
 .border {
-  border: 0.15em solid #3a4750;
+  border: 0.2em solid #3a4750;
 }
 .large {
   max-width: 30em;
