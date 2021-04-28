@@ -1,21 +1,24 @@
 <template>
   <div class="about">
-    <p>I love to develop technology that helps people in their everyday lives.
-      I have experience working in Ruby, RoR, Python, Django, Vue, and React.
-      I have also worked with GraphQL and Postgresql.
-      Learning new ideas, philosophies and technologies is what drives me on the day to day.
-      I am available Monday - Friday 9:00AM - 5:00PM MST.
-      Please, reach out, I would love to talk about how I can help you and your business.
-      Have a great day!</p>
+    <p>Back-end Developer (Ruby, Rails, Python, Django) that loves to learn new things, solve problems, and make things hum.
+      Whether working solo or in teams, I aim to design and write code that will make a positive impact for a business and the world.
+      A life-long learner of new technologies so don't count me out on quickly picking up anything you put down.
+      I have learned a bit of C language in my own time, and looking to dive into others.
+      Reach out! I would be excited to speak about what I can do to help you.</p>
+
+    <p>I also have some experience working on Vue(including Vuex and VueRouter) and React. </p>
   </div>
 </template>
 
 <script>
 export default {
-
+  name: "About"
 }
 </script>
 
 <style>
-
+  .about {
+    padding: 5%;
+    font-size: 2vw;
+  }
 </style>
